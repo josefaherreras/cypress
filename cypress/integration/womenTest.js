@@ -10,4 +10,10 @@ describe('Pruebas en el sitio women',function(){
         y mas cosas */
         cy.get('#layered_id_attribute_group_3').uncheck();
     })
+    it('Order Highest Price', function(){
+        cy.get('#selectProductSort').select('Price: Highest first');
+    })
+    it('Order By In stock', function(){
+        cy.get('#selectProductSort').select('In stock');
+    })
 })
